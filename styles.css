@@ -1099,6 +1099,10 @@ body.ar {
     }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
+	.wa .footer{
+		margin-top: -10px;
+		
+	}
     .sidebar {
         position: absolute;
         right: 117px;
@@ -1182,6 +1186,8 @@ body.ar {
         justify-content: center;
         align-items: center;
     }
+
+	
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .section {
