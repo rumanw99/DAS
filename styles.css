@@ -1,0 +1,1294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.reset {
+    padding: 0;
+    margin: 0;
+}
+body.ar {
+    direction: rtl;
+}
+
+.buttonNav {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+.buttonSidebar {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+.icon-container {
+    font-size: 24px; /* Adjust the size of the icon */
+    color: #333; /* Change the color of the icon */
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+    /* Add any additional styling as needed */
+}
+
+.section .section1 {
+    padding-inline-start: 15px;
+}
+
+.sidebar {
+    /* padding-top: 30px; */
+}
+.sidebar .logo {
+    height: 121px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .options .titleAndIcon {
+    width: 250px;
+    height: 35px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-inline-start: 10px;
+}
+.sidebar .options .titleAndIcon.active {
+    background: #e9e9e9;
+}
+.sidebar .options .titleAndIcon .title {
+    color: #3a3e3d;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.sidebar .options .titleAndIcon .icon {
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(218, 195, 235, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar .options .titleAndIcon .icon svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    color: rgba(76, 178, 123, 1);
+}
+
+.sidebar .options .titleAndIconAndArrow {
+    width: 200px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10px; */
+    padding-inline-end: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    padding-inline-start: 44px;
+    padding-inline-end: 44px;
+}
+.nav .personality {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.nav .personality img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.nav .personality text {
+    color: #4cb27b;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+}
+.nav .personality .notification {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(218, 195, 235, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav .personality .person {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(218, 195, 235, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.listOption {
+    position: absolute;
+    left: 100px;
+    top: 35px;
+    z-index: 99;
+    list-style: none;
+    width: 121px;
+    height: 97px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #f4edf9;
+    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.33);
+    padding-top: 20px;
+}
+.listOption .option1 {
+    width: 121px;
+    height: 27px;
+    flex-shrink: 0;
+    background: #8dff92;
+    color: #3a3e3d;
+    text-align: right;
+    padding-inline-start: 15px;
+    padding-top: 6px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+.listOption .option2 {
+    width: 121px;
+    height: 27px;
+    flex-shrink: 0;
+    background: #f4edf9;
+    color: #3a3e3d;
+    text-align: right;
+    padding-inline-start: 15px;
+    padding-top: 6px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.nav .personality .person-textIcon {
+    color: #4cb27b;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+}
+.nav .personality .darkMode {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #1a232f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav .personality .text {
+    color: #4cb27b;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 20px;
+}
+.nav .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.nav .search input {
+    border: none;
+}
+
+.nav .search svg {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.main {
+    width: 100%;
+    /* height: 850px; */
+    flex-shrink: 0;
+    padding: 15px;
+    border-radius: 0px 20px 0px 0px;
+    background: #e9e9e9;
+}
+
+.main .nav-main {
+    width: 95%;
+    margin: auto;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #79e57d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 30px;
+    padding-inline-end: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main .nav-main .nav-main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .nav-main p {
+    color: #3a3e3d;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-inline-start: 15px;
+    margin-top: 20px;
+}
+.main .nav-main-button {
+    width: 123px;
+    height: 33px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-inline-start: 30px;
+}
+.wa {
+    width: 98%;
+    margin: auto;
+}
+.main .main-main {
+    position: relative;
+    /* height: 480px; */
+    background: #fff;
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.main .products {
+    /* width: 261px; */
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #4cb27b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 15px;
+    padding-inline-end: 29px;
+    margin-bottom: 17px;
+}
+
+.main .products div .text {
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main .products div .number {
+    color: #fff;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main .evaluation {
+    /* width: 261px; */
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #3a3e3d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 15px;
+    padding-inline-end: 29px;
+    margin-bottom: 17px;
+}
+.main .evaluation div .text {
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main .evaluation div .number {
+    color: #fff;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main .totalOrders {
+    /* width: 261px; */
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #8b4fb8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 15px;
+    padding-inline-end: 29px;
+    margin-bottom: 17px;
+}
+
+.main .totalOrders div .text {
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main .totalOrders div .number {
+    color: #fff;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main .totalOrders2 {
+    /* width: 261px; */
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #f39c12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 15px;
+    padding-inline-end: 29px;
+    margin-bottom: 17px;
+}
+.main .totalOrders2 div .text {
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.main .totalOrders2 div .number {
+    color: #fff;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.main .salesStatistics {
+    /* width: 261px; */
+    height: 141px;
+    border-radius: 15px;
+    background: #e9e9e9;
+    padding-top: 10px;
+    padding-inline-start: 13px;
+    padding-inline-end: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 15px;
+}
+.main .salesStatistics div .text {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(76, 178, 123, 1);
+}
+.main .salesStatistics svg {
+    width: 170px !important;
+    margin-bottom: -30px !important;
+    /* border: 1px solid black; */
+}
+
+.main .NumberOfProductsByCategory {
+    /* width: 261px; */
+    height: 300px;
+    border-radius: 15px;
+    background: rgba(241, 240, 240, 1);
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.main .NumberOfProductsByCategory div .text {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(76, 178, 123, 1);
+}
+
+.main .NumberOfProductsByCategory .line {
+    border: 0.5px solid rgba(58, 62, 61, 1);
+    width: 150px;
+    text-align: center;
+}
+
+.main .ordersThisMonth {
+    /* width: 261px; */
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(241, 240, 240, 1);
+    padding-top: 10px;
+    padding-inline-start: 30px;
+    gap: 30px;
+}
+
+.main .ordersThisMonth div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.main .ordersThisMonth .list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+.main .ordersThisMonth .newOrder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 151px; */
+    height: 30px;
+    /* border: 1px solid black; */
+    width: 130px;
+}
+
+.main .ordersThisMonth div .text {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    color: rgba(76, 178, 123, 1);
+}
+.main .ordersThisMonth div .text2 {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0em;
+    color: rgba(58, 62, 61, 1);
+}
+
+.main .ordersThisMonth .newOrder div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .ordersThisMonth .newOrder p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0em;
+    color: rgba(58, 62, 61, 1);
+    margin-top: 20px;
+}
+.main .ordersThisMonth .newOrder .number {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: rgba(58, 62, 61, 1);
+}
+
+.main .purchasedPackage {
+    /* width: 261px; */
+    height: 76px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #f1f0f0;
+    padding: 10px;
+    margin-bottom: 17px;
+}
+.main .purchasedPackage p {
+    color: #4cb27b;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+.main .purchasedPackage div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.main .purchasedPackage div p {
+    color: #e74c3c;
+    font-family: Montserrat-Arabic;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.main .checkNow {
+    /* width: 261px; */
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #f1f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 15px;
+    padding-inline-start: 35px;
+    padding-inline-end: 35px;
+    padding-top: 10px;
+}
+
+.main .checkNow button {
+    width: 100%;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #4cb27b;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.main .checkNow button:hover {
+    width: 100%;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #238450;
+    cursor: pointer;
+}
+
+.main .main-main .orderNumber {
+    width: 230px;
+    height: 85.485px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-inline-start: 16px;
+    left: 0;
+    top: 52%;
+    z-index: 99;
+}
+
+.main .main-main .orderNumber div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main .main-main .orderNumber div p {
+    /* width: 100px; */
+    height: 20px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: right;
+    font-family: Montserrat-Arabic;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 187.5%; /* 18.75px */
+}
+
+.main .amountSold {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    outline: 20px solid #e9e9e9;
+    width: 230px;
+    height: 151px;
+    flex-shrink: 0;
+    /* border-radius: 15px; */
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-inline-start: 14px;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.main .amountSold .mony {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.main .amountSold .mony p {
+    color: #4cb27b;
+    font-family: Montserrat-Arabic;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main .amountSold .mounth {
+    color: #3a3e3d;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main .amountSold .dodo {
+    color: #3a3e3d;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.main .amountSold .lastMounth {
+    color: #3a3e3d;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main .cashWithdrawal {
+    /* width: 286px; */
+    height: 151px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main .cashWithdrawal .shod div {
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(218, 195, 235, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .cashWithdrawal .shod {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.main .cashWithdrawal .shod p {
+    color: #4cb27b;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.main .cashWithdrawal button {
+    width: 100%px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #4cb27b;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    background: #fff;
+    color: #4cb27b;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+}
+.main .cashWithdrawal button:hover {
+    width: 100%px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #4cb27b;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+    background: #4cb27b;
+}
+
+.main .AddaNewProduct {
+    /* width: 286px; */
+    height: 151px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #fff;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main .AddaNewProduct .shod {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.main .AddaNewProduct .shod p {
+    color: #4cb27b;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.main .AddaNewProduct .box {
+    border: 2px dashed #4cb27b;
+    width: 100%px;
+    height: 77px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.main .AddaNewProduct .box p {
+    color: #4cb27b;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.main .storeSettings {
+    /* width: 286px; */
+    height: 151px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main .storeSettings .shod div {
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(218, 195, 235, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .storeSettings .shod {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.main .storeSettings .shod p {
+    color: #4cb27b;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.main .storeSettings button {
+    width: 100%px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #4cb27b;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    background: #fff;
+    color: #4cb27b;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.main .storeSettings button:hover {
+    width: 100%px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #4cb27b;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+    background: #4cb27b;
+}
+
+.main .paymentSettings {
+    /* width: 286px; */
+    height: 151px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main .paymentSettings .shod div {
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(218, 195, 235, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .paymentSettings .shod {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.main .paymentSettings .shod p {
+    color: #4cb27b;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.main .paymentSettings button {
+    width: 100%px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #4cb27b;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    background: #fff;
+    color: #4cb27b;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main .paymentSettings button:hover {
+    width: 100%px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #4cb27b;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+    background: #4cb27b;
+}
+
+.main .footer {
+    width: 100%;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #fff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-inline-start: 10px;
+}
+
+.main .footer p {
+    color: #4cb27b;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .sidebar {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+
+    .main .products,
+    .main .evaluation,
+    .main .totalOrders,
+    .main .totalOrders2,
+    .main .salesStatistics,
+    .main .NumberOfProductsByCategory,
+    .main .ordersThisMonth,
+    .main .purchasedPackage,
+    .main .checkNow,
+    .main .amountSold,
+    .main .cashWithdrawal,
+    .main .AddaNewProduct,
+    .main .storeSettings,
+    .main .paymentSettings {
+        margin-bottom: 20px;
+    }
+
+    .main .main-main .orderNumber {
+        display: none;
+    }
+
+    .main .salesStatistics svg {
+        position: absolute;
+    }
+
+    .main .ordersThisMonth {
+        margin-bottom: 20px;
+        height: 250px;
+    }
+    .main .purchasedPackage {
+        margin-bottom: 20px;
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+
+    .main .checkNow {
+        width: 200px;
+        margin-bottom: 60%;
+    }
+    .main .NumberOfProductsByCategory {
+        height: 150px;
+    }
+    .main .amountSold {
+        width: 100%;
+    }
+    .buttonNav {
+        float: left;
+        margin: 30px;
+    }
+    .buttonSidebar {
+        float: right;
+        margin: 30px;
+    }
+
+    .nav {
+        background: #fff;
+        z-index: 99;
+        position: absolute;
+        left: 20px;
+        top: 70px;
+        height: 100px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .nav .personality {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar {
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        background: #fff;
+        z-index: 99;
+        width: 300px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .sidebar {
+        position: absolute;
+        right: 117px;
+        top: 30px;
+        background: #fff;
+        z-index: 99;
+        width: 300px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .section {
+        display: flex;
+    }
+    .section .section1 {
+        width: 30%;
+    }
+    .section .section2 .nav {
+        display: none;
+    }
+    .section .section2 {
+        width: 600%;
+    }
+    .main .main-main .orderNumber {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        height: 2000px;
+    }
+
+    .main .salesStatistics {
+        margin-bottom: 20px;
+    }
+
+    .main .salesStatistics svg {
+        position: absolute;
+        width: 400px !important;
+    }
+
+    .main .ordersThisMonth {
+        margin-bottom: 20px;
+        height: 250px;
+    }
+    .main .purchasedPackage {
+        margin-bottom: 20px;
+    }
+
+    .main .checkNow {
+        width: 200px;
+        float: left;
+    }
+    .main .NumberOfProductsByCategory {
+        height: 150px;
+    }
+
+    .buttonNav {
+        float: left;
+        margin: 30px;
+    }
+    .buttonSidebar {
+        float: right;
+        margin: 30px;
+    }
+
+    .nav {
+        background: #fff;
+        z-index: 99;
+        position: absolute;
+        left: 117px;
+        top: 30px;
+        height: 100px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .nav .personality {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .section {
+        display: flex;
+    }
+    .section .section1 {
+        width: 30%;
+    }
+    .section .section2 {
+        width: 70%;
+    }
+
+    .section .section2 .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section .section2 .nav .personality {
+        width: 60%;
+    }
+    .section .section2 .nav .search {
+        width: 20%;
+    }
+
+    .main .main-main .orderNumber {
+        display: none;
+    }
+
+    .main .main-main .amountSold {
+        position: absolute;
+        top: 48%;
+        outline: 10px solid #e9e9e9;
+    }
+    .main .main-main .NumberOfProductsByCategory {
+        margin-top: 30px;
+    }
+    .main .salesStatistics svg {
+        width: 150px !important;
+    }
+
+    .main .totalOrders {
+        padding-top: 20px;
+    }
+    .main .totalOrders2 {
+        padding-top: 20px;
+    }
+
+    .buttonNav {
+        display: none;
+    }
+    .buttonSidebar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .main .salesStatistics svg {
+        position: absolute;
+    }
+    .main .main-main .amountSold {
+        width: 170px;
+    }
+
+    .main .salesStatistics svg {
+        width: 140px !important;
+    }
+    .main .ordersThisMonth .list {
+        width: 150px;
+    }
+    .main .main-main .orderNumber {
+        width: 200px;
+        height: 70px;
+    }
+    .main .purchasedPackage div {
+        margin-top: -10px;
+    }
+    .main .totalOrders {
+        padding-top: 20px;
+    }
+    .main .totalOrders2 {
+        padding-top: 20px;
+    }
+    .main .NumberOfProductsByCategory .line {
+        width: 100px;
+    }
+    .main .ordersThisMonth .list .newOrder {
+        width: 120px;
+    }
+    .main .main-main .orderNumber {
+        width: 170px;
+    }
+
+    .main .amountSold {
+        outline: 20px solid#E9E9E9;
+        width: 180px !important;
+        height: 160px;
+    }
+    .sidebar .options .titleAndIconAndArrow {
+        width: 150px;
+    }
+    .buttonNav {
+        display: none;
+    }
+    .buttonSidebar {
+        display: none;
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Your styles for retina displays go here */
+}
